@@ -46,6 +46,10 @@ One admin surface for visibility and controlled operations without importing eve
 </tr>
 </table>
 
+<p align="center">
+  <img src="./assets/architecture-visual.svg" width="100%" alt="Architecture visual"/>
+</p>
+
 ## <code>02 / architecture</code>
 
 ~~~mermaid
@@ -88,6 +92,10 @@ flowchart TB
     DEPLOY --> Services
     OBS --- Services
 ~~~
+
+<p align="center">
+  <img src="./assets/flow-visual.svg" width="100%" alt="Workflow visual"/>
+</p>
 
 ## <code>03 / the_rules_that_keep_it_sane</code>
 
