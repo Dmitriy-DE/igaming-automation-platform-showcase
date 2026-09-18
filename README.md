@@ -40,6 +40,10 @@ The public showcase strips out the sensitive mechanics and keeps the platform en
 6. Runtime status is factual.
 7. Repeated deployment work becomes automation.
 
+<p align="center">
+  <img src="./assets/engineering-signature.svg" width="100%" alt="Engineering signature"/>
+</p>
+
 ## <code>05 / inspect</code>
 
 - [Architecture](docs/ARCHITECTURE.md)
