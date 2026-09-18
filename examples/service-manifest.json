@@ -1,0 +1,25 @@
+{
+  "services": [
+    {
+      "id": "messaging",
+      "runtime": "node",
+      "database": "postgresql",
+      "healthCheck": "/health",
+      "scheduledJobs": ["daily-plan", "sync"]
+    },
+    {
+      "id": "data-api",
+      "runtime": "node",
+      "database": "postgresql",
+      "healthCheck": "/health",
+      "scheduledJobs": ["sync"]
+    },
+    {
+      "id": "worker",
+      "runtime": "node",
+      "database": "postgresql",
+      "healthCheck": null,
+      "scheduledJobs": ["process-queue"]
+    }
+  ]
+}
