@@ -12,135 +12,41 @@
 
 A private monorepo I built as a home for **18 service/product directions**: messaging, bots, APIs, data processing, AI tooling, workers and infrastructure.
 
-This showcase deliberately strips out the sensitive business mechanics and keeps the part I actually want to show: **how I organised many runtimes without turning the repository into spaghetti**.
+The public showcase strips out the sensitive mechanics and keeps the platform engineering.
 
-<p align="center">
-  <img src="./assets/overview.svg" width="100%" alt="System overview"/>
-</p>
+<p align="center"><img src="./assets/product-mockup.svg" width="100%" alt="Automation Platform control plane mockup"/></p>
 
-## <code>01 / platform_shape</code>
+## <code>01 / platform_surface</code>
 
-<table>
-<tr>
-<td width="33%" valign="top">
-
-### Product runtimes
-
-Independent services with their own business logic and lifecycle.
-
-</td>
-<td width="33%" valign="top">
-
-### Shared platform
-
-Infrastructure helpers, deployment utilities, scheduler definitions and common integration clients.
-
-</td>
-<td width="33%" valign="top">
-
-### Control plane
-
-One admin surface for visibility and controlled operations without importing every service into one process.
-
-</td>
-</tr>
-</table>
-
-<p align="center">
-  <img src="./assets/architecture-visual.svg" width="100%" alt="Architecture visual"/>
-</p>
+<p align="center"><img src="./assets/features.svg" width="100%" alt="Automation Platform features"/></p>
 
 ## <code>02 / architecture</code>
 
-~~~mermaid
-flowchart TB
-    ADMIN[Admin / control plane]
+<p align="center"><img src="./assets/architecture-visual.svg" width="100%" alt="Automation Platform architecture"/></p>
 
-    subgraph Services
-      MSG[Messaging]
-      TG[Telegram]
-      DATA[Data APIs]
-      AI[AI / content]
-      WORKERS[Workers]
-    end
+<p align="center"><img src="./assets/overview.svg" width="100%" alt="Automation Platform system overview"/></p>
 
-    subgraph Platform
-      SHARED[Shared infra libs]
-      PG[(PostgreSQL)]
-      SCHED[Versioned schedules]
-      DEPLOY[Deploy tooling]
-      OBS[Health / watchdogs]
-    end
+## <code>03 / service_onboarding</code>
 
-    ADMIN --> MSG
-    ADMIN --> TG
-    ADMIN --> DATA
-    ADMIN --> AI
+<p align="center"><img src="./assets/flow-visual.svg" width="100%" alt="Automation Platform service flow"/></p>
 
-    MSG --> SHARED
-    TG --> SHARED
-    DATA --> SHARED
-    AI --> SHARED
+## <code>04 / rules_that_keep_it_sane</code>
 
-    MSG --> PG
-    TG --> PG
-    DATA --> PG
-    AI --> PG
-    WORKERS --> PG
-
-    SCHED --> WORKERS
-    DEPLOY --> Services
-    OBS --- Services
-~~~
-
-<p align="center">
-  <img src="./assets/flow-visual.svg" width="100%" alt="Workflow visual"/>
-</p>
-
-## <code>03 / the_rules_that_keep_it_sane</code>
-
-1. **A project does not import another project's business logic.**
+1. A project does not import another project's business logic.
 2. Shared code is infrastructure, not a dumping ground.
 3. Secrets belong to the owning runtime.
 4. Scheduled work is versioned.
 5. Admin is a control plane, not a god-process.
-6. Runtime status is factual: inactive means inactive.
+6. Runtime status is factual.
 7. Repeated deployment work becomes automation.
 
-## <code>04 / 18_directions_without_the_noise</code>
-
-| Group | What I built around it |
-|---|---|
-| Messaging | send flows, scheduling, tracking, lifecycle jobs |
-| Telegram | bot runtimes, session/account infrastructure, webhooks |
-| Data | APIs, ingestion, sync and processing jobs |
-| AI/content | gateway/tools and batch workflows |
-| Infrastructure | provisioning, workers, deployment and health |
-| Control plane | admin SPA, status visibility and safe commands |
-
-## <code>05 / why_a_monorepo</code>
-
-Not because “monorepo is cool”.
-
-I wanted one place for:
-
-- shared operational conventions;
-- one deployment language;
-- one documentation standard;
-- versioned schedules;
-- reusable infrastructure helpers;
-- portfolio-level visibility;
-
-while still keeping runtime/business boundaries explicit.
-
-## <code>06 / technical_proof</code>
+## <code>05 / inspect</code>
 
 - [Architecture](docs/ARCHITECTURE.md)
 - [Boundary rules](docs/BOUNDARIES.md)
 - [Sanitised service manifest](examples/service-manifest.json)
 
-<details>
-<summary><b>Deliberately removed from the public version</b></summary>
+<details><summary><b>Deliberately not public</b></summary>
 
 Server IPs, real domains, credentials, payment mechanics, customer data, proprietary campaign logic and production runbooks.
 
