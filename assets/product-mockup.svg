@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650">
+<rect width="1200" height="650" rx="28" fill="#090d16"/>
+<rect x="36" y="34" width="1128" height="582" rx="22" fill="#0d1117" stroke="#30363d"/>
+<text x="70" y="92" fill="#a371f7" font-family="monospace" font-size="11">CONTROL PLANE</text>
+<text x="70" y="128" fill="#f0f6fc" font-family="Arial" font-size="25" font-weight="700">Service estate</text>
+<text x="70" y="153" fill="#8b949e" font-family="monospace" font-size="11">one operational language, explicit runtime boundaries</text>
+<g transform="translate(70 184)">
+<rect width="700" height="350" rx="18" fill="#111827" stroke="#30363d"/>
+<text x="20" y="34" fill="#f0f6fc" font-family="Arial" font-size="17" font-weight="700">Runtime groups</text>
+<g transform="translate(20 60)"><rect width="660" height="40" rx="9" fill="#0d1117"/><circle cx="18" cy="20" r="6" fill="#58a6ff"/><text x="36" y="25" fill="#c9d1d9" font-family="Arial" font-size="13">Messaging</text><text x="330" y="25" fill="#8b949e" font-family="monospace" font-size="10">4 services</text><text x="535" y="25" fill="#3fb950" font-family="monospace" font-size="10">healthy</text></g><g transform="translate(20 112)"><rect width="660" height="40" rx="9" fill="#0d1117"/><circle cx="18" cy="20" r="6" fill="#a371f7"/><text x="36" y="25" fill="#c9d1d9" font-family="Arial" font-size="13">Telegram</text><text x="330" y="25" fill="#8b949e" font-family="monospace" font-size="10">3 services</text><text x="535" y="25" fill="#f2cc60" font-family="monospace" font-size="10">mixed</text></g><g transform="translate(20 164)"><rect width="660" height="40" rx="9" fill="#0d1117"/><circle cx="18" cy="20" r="6" fill="#3fb950"/><text x="36" y="25" fill="#c9d1d9" font-family="Arial" font-size="13">Data / ingestion</text><text x="330" y="25" fill="#8b949e" font-family="monospace" font-size="10">4 services</text><text x="535" y="25" fill="#3fb950" font-family="monospace" font-size="10">healthy</text></g><g transform="translate(20 216)"><rect width="660" height="40" rx="9" fill="#0d1117"/><circle cx="18" cy="20" r="6" fill="#f0883e"/><text x="36" y="25" fill="#c9d1d9" font-family="Arial" font-size="13">AI / content</text><text x="330" y="25" fill="#8b949e" font-family="monospace" font-size="10">3 services</text><text x="535" y="25" fill="#f0883e" font-family="monospace" font-size="10">partial</text></g><g transform="translate(20 268)"><rect width="660" height="40" rx="9" fill="#0d1117"/><circle cx="18" cy="20" r="6" fill="#f2cc60"/><text x="36" y="25" fill="#c9d1d9" font-family="Arial" font-size="13">Workers</text><text x="330" y="25" fill="#8b949e" font-family="monospace" font-size="10">4 jobs</text><text x="535" y="25" fill="#f0883e" font-family="monospace" font-size="10">scheduled</text></g>
+</g>
+<g transform="translate(800 184)">
+<rect width="294" height="160" rx="18" fill="#111827" stroke="#30363d"/>
+<text x="18" y="32" fill="#f0f6fc" font-family="Arial" font-size="16" font-weight="700">Scheduler</text>
+<text x="18" y="62" fill="#8b949e" font-family="monospace" font-size="10">daily-plan</text><rect x="150" y="52" width="105" height="12" rx="6" fill="#a371f7" opacity=".75"/>
+<text x="18" y="92" fill="#8b949e" font-family="monospace" font-size="10">sync</text><rect x="150" y="82" width="82" height="12" rx="6" fill="#58a6ff" opacity=".75"/>
+<text x="18" y="122" fill="#8b949e" font-family="monospace" font-size="10">worker</text><rect x="150" y="112" width="120" height="12" rx="6" fill="#3fb950" opacity=".75"/>
+</g>
+<g transform="translate(800 368)">
+<rect width="294" height="166" rx="18" fill="#111827" stroke="#30363d"/>
+<text x="18" y="32" fill="#f0f6fc" font-family="Arial" font-size="16" font-weight="700">Deploy boundary</text>
+<text x="18" y="65" fill="#8b949e" font-family="monospace" font-size="10">service owns logic</text>
+<text x="18" y="91" fill="#8b949e" font-family="monospace" font-size="10">service owns secrets</text>
+<text x="18" y="117" fill="#8b949e" font-family="monospace" font-size="10">platform owns tooling</text>
+<text x="18" y="143" fill="#3fb950" font-family="monospace" font-size="10">repeatable → automated</text>
+</g>
+</svg>
