@@ -14,6 +14,10 @@ A private monorepo I built as a home for **18 service/product directions**: mess
 
 This showcase deliberately strips out the sensitive business mechanics and keeps the part I actually want to show: **how I organised many runtimes without turning the repository into spaghetti**.
 
+<p align="center">
+  <img src="./assets/overview.svg" width="100%" alt="System overview"/>
+</p>
+
 ## <code>01 / platform_shape</code>
 
 <table>
