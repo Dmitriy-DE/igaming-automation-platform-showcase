@@ -20,17 +20,21 @@ The public showcase strips out the sensitive mechanics and keeps the platform en
 
 <p align="center"><img src="./assets/features.svg" width="100%" alt="Automation Platform features"/></p>
 
-## <code>02 / architecture</code>
+## <code>02 / core_model</code>
+
+<p align="center"><img src="./assets/core-model.svg" width="100%" alt="Runtime model"/></p>
+
+## <code>03 / architecture</code>
 
 <p align="center"><img src="./assets/architecture-visual.svg" width="100%" alt="Automation Platform architecture"/></p>
 
 <p align="center"><img src="./assets/overview.svg" width="100%" alt="Automation Platform system overview"/></p>
 
-## <code>03 / service_onboarding</code>
+## <code>04 / service_onboarding</code>
 
 <p align="center"><img src="./assets/flow-visual.svg" width="100%" alt="Automation Platform service flow"/></p>
 
-## <code>04 / rules_that_keep_it_sane</code>
+## <code>05 / rules_that_keep_it_sane</code>
 
 1. A project does not import another project's business logic.
 2. Shared code is infrastructure, not a dumping ground.
@@ -40,11 +44,13 @@ The public showcase strips out the sensitive mechanics and keeps the platform en
 6. Runtime status is factual.
 7. Repeated deployment work becomes automation.
 
+## <code>06 / engineering_signature</code>
+
 <p align="center">
   <img src="./assets/engineering-signature.svg" width="100%" alt="Engineering signature"/>
 </p>
 
-## <code>05 / inspect</code>
+## <code>07 / inspect</code>
 
 - [Architecture](docs/ARCHITECTURE.md)
 - [Boundary rules](docs/BOUNDARIES.md)
