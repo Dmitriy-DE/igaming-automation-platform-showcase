@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="390" viewBox="0 0 1600 390">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#061018"/><stop offset="1" stop-color="#0b1118"/></linearGradient></defs>
+<rect width="1600" height="390" rx="26" fill="url(#bg)"/><rect x="1" y="1" width="1598" height="388" rx="25" fill="none" stroke="#1d5266"/>
+<text x="48" y="58" fill="#16d9ff" font-family="monospace" font-size="24" font-weight="700">THE ARCHITECTURAL LAW</text>
+<text x="48" y="94" fill="#a8bcc8" font-family="Arial" font-size="21">projects/A does not import projects/B business logic.</text>
+
+<g transform="translate(70 150)">
+<rect width="430" height="150" rx="18" fill="#0a1720" stroke="#55b6ff"/>
+<text x="28" y="42" fill="#55b6ff" font-family="Arial" font-size="27" font-weight="700">Project A</text>
+<text x="28" y="79" fill="#f0f4f6" font-family="Arial" font-size="18">Owns its business logic, data, secrets and runtime.</text>
+<text x="28" y="112" fill="#8fa5b1" font-family="Arial" font-size="16">Can depend on shared infrastructure primitives.</text>
+</g>
+
+<g transform="translate(585 150)">
+<rect width="430" height="150" rx="18" fill="#0a1720" stroke="#2fe3b0"/>
+<text x="28" y="42" fill="#2fe3b0" font-family="Arial" font-size="27" font-weight="700">shared/</text>
+<text x="28" y="79" fill="#f0f4f6" font-family="Arial" font-size="18">Infrastructure helpers and deliberate common adapters.</text>
+<text x="28" y="112" fill="#8fa5b1" font-family="Arial" font-size="16">Not a place to hide cross-project business coupling.</text>
+</g>
+
+<g transform="translate(1100 150)">
+<rect width="430" height="150" rx="18" fill="#0a1720" stroke="#8b5cf6"/>
+<text x="28" y="42" fill="#b89cff" font-family="Arial" font-size="27" font-weight="700">Project B</text>
+<text x="28" y="79" fill="#f0f4f6" font-family="Arial" font-size="18">Owns a different business/runtime boundary.</text>
+<text x="28" y="112" fill="#8fa5b1" font-family="Arial" font-size="16">Cross-project interaction must be explicit.</text>
+</g>
+
+<path d="M500 225H585 M1015 225H1100" stroke="#2b6074" stroke-width="4"/>
+<text x="800" y="340" text-anchor="middle" fill="#ffb547" font-family="Arial" font-size="18" font-weight="700">Shared infrastructure ≠ shared ownership of product logic</text>
+</svg>
